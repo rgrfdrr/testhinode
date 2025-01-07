@@ -29,10 +29,15 @@
     checkVersion = false
 
 [home]
-    # sections = ["posts"]
-    fullCover = false
+    sections = ["posts"]
+    fullCover = true
     centerHeadline = false
     style = ""
+    [home.feature]
+        orientation = "horizontal"
+        color = "primary"
+        width = 4
+        align = "start"
 
 [navigation]
     anchor = true
@@ -88,21 +93,21 @@
     clipboard = true
 
 # toml-docs-start sections
-# [sections]
-#     [sections.posts]
-#         title = "Posts"
-#         sort = "date"
-#         reverse = true
-#         nested = true
-#         cols = 3
-#         color = ""
-#         padding = "0"
-#         header = "full"
-#         footer = "none"
-#         orientation = "stacked"
-#         style = "border-0 card-zoom"
-#         homepage = 3
-#         separator = true
+ [sections]
+     [sections.posts]
+         title = "Posts"
+         sort = "date"
+         reverse = true
+         nested = true
+         cols = 3
+         color = "success"
+         padding = "0"
+         header = "full"
+         footer = "none"
+         orientation = "stacked"
+         style = "border-0 card-zoom"
+         homepage = 3
+         separator = true
 # toml-docs-end sections
 
 [favicon]
@@ -110,7 +115,7 @@
     sizes = [16, 32, 48]
 
 [style]
-    primary = "#d43900"
+    primary = "#e30612" #"#d43900"
     secondary = "#6c757d"
     success = "#198754"
     info = "#0dcaf0"
